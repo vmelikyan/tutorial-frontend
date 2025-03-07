@@ -31,3 +31,4 @@ services:
             COMPONENT: "app"
             ENV: "lifecycle"
             API_URL: "https://{{tutorial-backend_publicUrl}}"
+            UUID: "{{buildUUID}}"
