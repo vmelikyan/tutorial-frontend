@@ -1,0 +1,33 @@
+---
+version: "1.2.0"
+
+environment:
+  autoDeploy: true
+  defaultServices:
+    - name: "tutorial-frontend"
+  optionalServices:
+    - name: "tutorial-backend"
+      repository: "vmelikyan/tutorial-backend"
+      branch: "main"
+
+services:
+  - name: tutorial-frontend
+    defaultUUID: "tutorial-dev-0"
+    helm:
+      repository: "vmelikyan/tutorial-frontend"
+      branchName: "main"
+      chart:
+        name: "demo-app"
+        valueFiles:
+          - "sysops/helm/common.yaml"
+          - "sysops/helm/lfc/app.yaml"
+      docker:
+        defaultTag: "main"
+        app:
+          dockerfilePath: "Dockerfile"
+          ports:
+            - 3000
+          env:
+            COMPONENT: "app"
+            ENV: "lifecycle"
+            API_URL: "https://{{tutorial-backend_publicUrl}}"

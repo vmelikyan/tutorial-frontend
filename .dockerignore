@@ -1,0 +1,14 @@
+# Ignore node_modules to prevent copying them to the Docker image
+node_modules
+# Ignore local development logs
+pnpm-debug.log
+# Ignore local environment configuration files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Ignore the Next.js build output
+.next
+# Ignore any other unwanted files or directories
+.DS_Store
+.git
