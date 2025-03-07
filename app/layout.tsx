@@ -14,8 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const uuid = process.env.UUID || "";
+
 export const metadata: Metadata = {
-  title: "Tasks App",
+  title: `${uuid} | Tasks App`,
   description: "Created to learn lifecycle basics",
 };
 
