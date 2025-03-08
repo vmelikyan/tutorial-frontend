@@ -3,6 +3,9 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 ENV COREPACK_DEFAULT_TO_LATEST=0
 
+ARG UUID
+ENV UUID=$UUID
+
 RUN corepack enable 
 
 COPY pnpm-lock.yaml ./
