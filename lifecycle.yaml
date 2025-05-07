@@ -17,6 +17,8 @@ services:
       repository: "vmelikyan/tutorial-frontend"
       branchName: "main"
       docker:
+        builder:
+          engine: 'buildkit'
         defaultTag: "main"
         app:
           dockerfilePath: "Dockerfile"
