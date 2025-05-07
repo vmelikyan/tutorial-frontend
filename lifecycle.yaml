@@ -15,7 +15,7 @@ services:
     defaultUUID: "tutorial-dev-0"
     github:
       repository: "vmelikyan/tutorial-frontend"
-      branchName: "main"
+      branchName: "github-type"
       docker:
         builder:
           engine: 'buildkit'
