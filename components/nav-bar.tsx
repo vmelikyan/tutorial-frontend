@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full shadow-md p-4 flex items-center justify-between">
       <h1 className="text-xl font-bold">
         <span className="text-white-500 mr-2 text-lg border-2 border-white rounded px-2 py-1">{uuid}</span>
-        <Link href="/">Tasks App</Link>
+        <Link href="/">Nicks App</Link>
       </h1>
       <div className="flex space-x-4">
         <Button asChild variant="ghost">
