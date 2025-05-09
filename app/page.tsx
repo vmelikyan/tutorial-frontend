@@ -13,7 +13,7 @@ export default function Home() {
     <div className="container h-full mx-auto max-w-4xl px-4 pt-16 grid grid-cols-2">
       <Card className="w-[400px]">
         <CardHeader>
-          <CardTitle className="text-xl">Tasks Page</CardTitle>
+          <CardTitle className="text-xl">Nick Wins</CardTitle>
           <CardDescription>
             <ul className="list-disc pl-5 text-base">
               <li>Check out the data in the Tasks page.</li>
