@@ -17,7 +17,7 @@ services:
       branchName: "github-type"
       docker:
         builder:
-          engine: 'buildkit'
+          engine: 'kaniko'
         defaultTag: "main"
         app:
           dockerfilePath: "Dockerfile"
